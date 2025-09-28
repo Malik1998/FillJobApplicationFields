@@ -18,7 +18,7 @@ DEFAULT_LINKEDIN=<link to linkedin profile>
 
 ```
 
-4. [OPTIONAL] add preferences.json and add fields you would like to be founf manually (w/o llm): 
+4. [OPTIONAL] add preferences.json and add fields you would like to be found manually (w/o llm and analyzing .tex file): 
 
 ```
 {
