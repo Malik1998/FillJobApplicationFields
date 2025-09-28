@@ -4,8 +4,6 @@ from llm import make_llm_call, make_structured_call
 import base64
 
 
-
-
 def is_cover_letter(field_name: str) -> bool:
     return "cover" in field_name.lower()
 

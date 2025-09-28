@@ -51,4 +51,9 @@ python3 main.py --url <url>
 
 ```
 
---fill-in-browse -- still under construction
+--fill-in-browser -- still under construction
+
+
+
+# Problems
+1. If you have problems with selenium, just delete it from requirements.txt, code will still work, but w/o --fill-in-browser

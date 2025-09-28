@@ -1,18 +1,15 @@
 from fill_fields import is_cover_letter, is_cv
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 import time
-from selenium.webdriver.common.by import By
 import requests
 from llm import make_llm_call
 from html_to_markdown import convert_to_markdown
 from db import get_job_key_from_db
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
+
 
 
 def open_and_capture(url, headless="new"):
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
     options = Options()
     # options.add_argument(f"--headless={headless}")
     driver = webdriver.Chrome(options=options)
@@ -58,6 +55,10 @@ def is_almost_equal(str1, str2, threshold=0.8):
     return similarity >= threshold
 
 def fill_field_from_dict(driver, field_name, field_value):
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    
     get_and_click_all_accept_buttons(driver)
     if is_cv(field_name) or is_cover_letter(field_name):
         print(f"Don't fill {field_name} automatically")
