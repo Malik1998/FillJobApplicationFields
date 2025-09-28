@@ -1,5 +1,5 @@
 # FillJobApplicationFields
-This is small console application to fill job application from configuration. It's sends your resume.text to llm, to write cover letter.
+This is small console application to fill job application from configuration. It's sends your resume.tex to llm, to write cover letter.
 
 # Setup files
 1. Add *.tex file with latex of your resume
