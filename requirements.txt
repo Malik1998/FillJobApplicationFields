@@ -1,0 +1,6 @@
+pyyaml
+dotenv
+openai
+selenium
+requests
+html_to_markdown
